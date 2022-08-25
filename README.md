@@ -1,2 +1,2 @@
-# Unidiner-POS-Release-Only
-Only for App release
+# Restaurant POS
+# Angular Application
