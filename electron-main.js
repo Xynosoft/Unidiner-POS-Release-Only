@@ -54,7 +54,7 @@ function createWindow() {
     mainWindow.show();
   });
  
-  //autoUpdater.checkForUpdates();
+  autoUpdater.checkForUpdates();
   //mainWindow.webContents.openDevTools()
   setInterval(() => {
     autoUpdater.checkForUpdates()

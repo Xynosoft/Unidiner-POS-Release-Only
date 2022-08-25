@@ -1,9 +1,9 @@
 {
   "name": "unidiner",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Restaurant POS application",
   "main": "electron-main.js",
-  "author": "Xynosoft Solutions Pvt. Ltd.",
+  "author": "Unidiner POS Software",
   "repository": {
 		"type": "git",
 		"url": "https://github.com/Xynosoft/Unidiner-POS-Release-Only"
@@ -22,14 +22,29 @@
     "win": {
       "publish": [
 				"github"
-			]
+			],
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "src/assets/icons8-connect-256.ico",
+      "uninstallerIcon": "src/assets/icons8-connect-256.ico",
+      "uninstallDisplayName": "Unidiner uninstaller",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "installerHeader": "src/assets/installerHeader.bmp",
+      "installerSidebar": "src/assets/installerSidebar.bmp"
     },
     "linux": {},
     "mac": {}
   },
   "scripts": {
     "ng": "ng",   
-    "build-publish": "electron-builder --win --publish always"
+    "build-win": "electron-builder --win",
+    "build-publish": "set GH_TOKEN=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 && electron-builder --win --publish always"
   },
   "private": true,
   "dependencies": {
