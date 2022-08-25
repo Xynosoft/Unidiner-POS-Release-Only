@@ -44,7 +44,7 @@
   "scripts": {
     "ng": "ng",   
     "build-win": "electron-builder --win",
-    "build-publish": "set GH_TOKEN=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 && electron-builder --win --publish always"
+    "build-publish": "set GH_TOKEN=<> && electron-builder --win --publish always"
   },
   "private": true,
   "dependencies": {
