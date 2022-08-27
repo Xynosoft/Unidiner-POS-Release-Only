@@ -1,6 +1,6 @@
 {
   "name": "unidiner",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Restaurant POS application",
   "main": "electron-main.js",
   "author": "Unidiner POS Software",
